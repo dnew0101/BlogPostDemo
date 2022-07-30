@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    background-color: whitesmoke;
+}
+.container {
+    margin: 0;
+    width: 100%;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-rows: 1fr 4fr 4fr 4fr 1fr 0.5fr;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "main main main"
+    "sd sd sd"
+    "rel rel rel"
+    "ft ft ft";
+}
+.header {
+    margin-top: 0;
+    grid-area: header;
+    background-color: rgb(166, 111, 255);
+}
+.main {
+    grid-area: main;
+    background-color: whitesmoke;
+}
+.sidebar {
+    grid-area: sd;
+    background-color: rgb(255, 236, 199);
+}
+.relContent {
+    grid-area: rel;
+    background-color: whitesmoke;
+}
+.footer {
+    grid-area: ft;
+    background-color: rgb(201, 201, 201);
+}
+
+
+@media (min-width: 600px) {
+    .container {
+        margin: 0;
+        width: 100%;
+        grid-template-columns: 1fr 5fr 2fr;
+        grid-template-rows: 1fr 4fr 4fr 4fr 1fr 0.5fr;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "main main main"
+        "sd main rel"
+        "sd main rel"
+        "ft ft ft";
+    }
+    .header {
+        margin-top: 0;
+        grid-area: header;
+        background-color: rgb(166, 111, 255);
+    }
+    .main {
+        grid-area: main;
+        background-color: whitesmoke;
+    }
+    .sidebar {
+        grid-area: sd;
+        background-color: rgb(255, 236, 199);
+    }
+    .relContent {
+        grid-area: rel;
+        background-color: whitesmoke;
+    }
+    .footer {
+        grid-area: ft;
+        background-color: rgb(201, 201, 201);
+    }
+}
