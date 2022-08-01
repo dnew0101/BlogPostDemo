@@ -1,9 +1,21 @@
 
 h1, h2 {
-    font-family: cursive;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 h1 {
     text-align: center;
+}
+h3 {
+    text-shadow: black;
+    font-style: italic;
+}
+.red {
+    font-size: 4em;
+    color: red;
+}
+.white {
+    font-size: 4em;
+    color: white;
 }
 p {
     font-family: Arial, Helvetica, sans-serif;
@@ -22,7 +34,12 @@ p {
     font-family: Arial, Helvetica, sans-serif;
     height: 50px;
     width: 100%;
-    border: 2px solid black ;
-    border-radius: 25px;
+    border: 3px solid black ;
+    border-radius: 30px;
 
+}
+.sidebar {
+    background-color: rgb(255, 236, 199);
+    border: 3px solid black;
+    border-radius: 25px;
 }

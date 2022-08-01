@@ -1,0 +1,16 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.red {
+    flex-grow: 1;
+}
+.white {
+    flex-grow: 1;
+}
+#authorCard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
