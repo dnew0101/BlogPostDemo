@@ -1,0 +1,31 @@
+.header {
+    width: 98vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.red {
+    flex-grow: 1;
+}
+.white {
+    flex-grow: 1;
+}
+.main {
+    margin: 3px;
+}
+.subHeader {
+    width: 95vw;
+}
+.relContent {
+    margin: 3px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 236, 199);
+    border: 3px solid black;
+    border-radius: 25px;
+    width: 95vw;
+}
+article {
+    border: solid 2px black;
+    width: 95vw;
+}

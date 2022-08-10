@@ -7,12 +7,11 @@ body {
     display: grid;
     margin: 0;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 2fr 1fr 0.5fr;
     grid-template-areas: 
     "header header header"
     "main main main"
     "main main main"
-    "sd sd sd"
     "rel rel rel"
     "ft ft ft";
 }
@@ -25,9 +24,6 @@ body {
     grid-area: main;
     background-color: whitesmoke;
 }
-.sidebar {
-    grid-area: sd;
-}
 .relContent {
     grid-area: rel;
     background-color: whitesmoke;
@@ -37,21 +33,18 @@ body {
     background-color: rgb(201, 201, 201);
 }
 
-/*I'm gonna set a breakpoint at 750px, because it gets a little wonky after
-that width*/
-
 @media screen and (min-width:750px) {
     .container {
     display: grid;
     margin: 0;
     width: 100%;
     grid-template-columns: 0.95fr 0.95fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 0.5fr;
+    grid-template-rows: 1fr 1fr 3fr 1fr 0.5fr;
     grid-template-areas: 
     "header header"
     "main main"
     "main main"
-    "sd rel"
+    "rel rel"
     "ft ft";
     }
     .header {
@@ -62,9 +55,6 @@ that width*/
     .main {
         grid-area: main;
         background-color: whitesmoke;
-    }
-    .sidebar {
-        grid-area: sd;
     }
     .relContent {
         grid-area: rel;
