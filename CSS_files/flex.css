@@ -20,7 +20,22 @@
 #authorCard {
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+}
+caption {
+    width: 100%;
+    justify-content: center;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 25%;
+    width: 100%;
+}
+.bio {
+    width: 100%;
+    padding: 3px;
 }
 .misc {
     display: flex;
@@ -29,6 +44,7 @@
 }
 .sidebar {
     margin: 3px;
+    padding: 3px;
     display: flex;
     flex-direction: column;
     width: 95vw;

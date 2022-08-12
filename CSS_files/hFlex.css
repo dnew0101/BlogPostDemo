@@ -29,3 +29,13 @@ article {
     border: solid 2px black;
     width: 95vw;
 }
+.mailForm {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+@media screen and (min-width: 750px) {
+    .relContent {
+        width: 45vw;
+    }
+}

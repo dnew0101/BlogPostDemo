@@ -7,12 +7,13 @@ body {
     display: grid;
     margin: 0;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 2fr 1fr 0.5fr;
+    grid-template-rows: 0.5fr 1fr 2fr 0.5fr 0.5fr 0.05fr;
     grid-template-areas: 
     "header header header"
     "main main main"
     "main main main"
     "rel rel rel"
+    "mail mail mail"
     "ft ft ft";
 }
 .header {
@@ -28,6 +29,10 @@ body {
     grid-area: rel;
     background-color: whitesmoke;
 }
+.mailForm {
+    grid-area: mail;
+    background-color: whitesmoke;
+}
 .footer {
     grid-area: ft;
     background-color: rgb(201, 201, 201);
@@ -39,12 +44,12 @@ body {
     margin: 0;
     width: 100%;
     grid-template-columns: 0.95fr 0.95fr;
-    grid-template-rows: 1fr 1fr 3fr 1fr 0.5fr;
+    grid-template-rows: 0.3fr 1fr 3fr 1fr 0.05fr;
     grid-template-areas: 
     "header header"
     "main main"
     "main main"
-    "rel rel"
+    "rel mail"
     "ft ft";
     }
     .header {
@@ -54,11 +59,12 @@ body {
     }
     .main {
         grid-area: main;
-        background-color: whitesmoke;
     }
     .relContent {
         grid-area: rel;
-        background-color: whitesmoke;
+    }
+    .mailForm {
+        grid-area: mail;
     }
     .footer {
         grid-area: ft;
