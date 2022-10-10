@@ -1,4 +1,5 @@
 .header {
+    margin: 0;
     width: 98vw;
     display: flex;
     flex-direction: row;
@@ -11,7 +12,10 @@
     flex-grow: 1;
 }
 .main {
+    display: flex;
+    flex-wrap: wrap;
     margin: 3px;
+    width: 98vw;
 }
 .subHeader {
     width: 95vw;
@@ -30,16 +34,38 @@ caption {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 25%;
+    height: 10%;
     width: 100%;
 }
 .bio {
     width: 100%;
     padding: 3px;
 }
-.misc {
+.figure {
+    float: left;
+    margin: 10px;
     display: flex;
     flex-direction: column;
+    margin: 10;
+    width: 100%;
+}
+#guitar {
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    max-height: 350px;
+}
+#guitarAndArticle {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: justify;
+    width: 98vw;
+}
+.misc {
+    max-width: 98vw;
+    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 .sidebar {
@@ -58,16 +84,100 @@ caption {
 article {
     width: 95vw;
 }
+.back {
+    border: 3px solid black;
+}
 
-@media screen and (min-width:750px) {
+@media screen and (min-width:600px) and (max-width:900px) {
+    .header {
+        margin: 0;
+        width: 98vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .red {
+        flex-grow: 0;
+    }
+    .white {
+        flex-grow: 0;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 5%;
+        width: 100%;
+    }
+    .bio {
+        padding-bottom: 5px;
+    }
     #guitarAndArticle {
-        display: inline-block;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        text-align: justify;
+        width: 98vw;
+    }
+    .figure {
+        margin: 10px;
+        width: 30%;
+    }
+    .figcaption {
+        max-width: 350px;
     }
     #guitar {
-        float: left;
         width: 30vw;
         height: 30vw;
-        max-width: 30%;
+        max-width: 100%;
+        max-height: 350px;
+    }
+    .sidebar {
+        width: 45vw;
+    }
+    .relContent {
+        width: 45vw;
+    }
+    .misc {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+}
+@media screen and (min-width:901px){
+    .header {
+        margin: 0;
+        width: 98vw;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .red {
+        flex-grow: 0;
+    }
+    .white {
+        flex-grow: 0;
+    }
+    .social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 5%;
+        width: 100%;
+    }
+    .bio {
+        padding-bottom: 5px;
+    }
+    .figure {
+        margin: 10px;
+        max-width: 20%;
+    }
+    #guitar {
+        width: 30vw;
+        height: 30vw;
+        max-width: 100%;
         max-height: 350px;
     }
     .sidebar {
